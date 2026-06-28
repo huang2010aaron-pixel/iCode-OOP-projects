@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DigitalPet.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label
+                Text="Digital Pet"/>
+            <Label
+                x:Name="Emojis"
+                Text=""/>
+
+            <Label
+                x:Name="Hunger"
+                Text="Hunger: "/>
+
+            <Button
+                x:Name="FeedButton"
+                Text="Feed"
+                TextColor="White"
+                WidthRequest="100"
+                BackgroundColor="DarkGreen"
+                Clicked="FeedButton_Clicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

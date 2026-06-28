@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="VehicleHierarchyApp.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="5" SizeChanged="VerticalStackLayout_SizeChanged">
+            <Image
+                x:Name="Symbol"
+                Aspect="AspectFit"
+                HeightRequest="185"
+                SemanticProperties.Description="car"
+                Source="car.png" />
+            <Label
+                x:Name="Title"
+                FontSize="40"
+                HorizontalOptions="Center"
+                Text="Heello" />
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
+                <Button
+                    x:Name="StartButton"
+                    BackgroundColor="Green"
+                    Clicked="StartButton_Clicked"
+                    FontSize="30"
+                    Text="Start" />
+                <Button
+                    x:Name="SpecialButton"
+                    BackgroundColor="DodgerBlue"
+                    Clicked="SpecialButton_Clicked"
+                    FontSize="30"
+                    Text="Special" />
+                <Button
+                    x:Name="StopButton"
+                    BackgroundColor="Red"
+                    Clicked="StopButton_Clicked"
+                    FontSize="30"
+                    Text="Stop" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
+                <Button
+                    x:Name="CarButton"
+                    BackgroundColor="DarkRed"
+                    Clicked="SelectCar"
+                    FontSize="30"
+                    Text="Car" />
+                <Button
+                    x:Name="MotorcycleButton"
+                    BackgroundColor="Green"
+                    Clicked="SelectMotorcycle"
+                    FontSize="30"
+                    Text="Motorcycle" />
+                <Button
+                    x:Name="HelicopterButton"
+                    BackgroundColor="DodgerBlue"
+                    Clicked="SelectHelicopter"
+                    FontSize="30"
+                    Text="Helicopter" />
+                <Button
+                    x:Name="TruckButton"
+                    BackgroundColor="DodgerBlue"
+                    Clicked="SelectTruck"
+                    FontSize="30"
+                    Text="Truck" />
+            </HorizontalStackLayout>
+            <Label
+                x:Name="Textbox"
+                FontSize="50"
+                Text="" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NotetakingApp.MainPage">
+
+    <Grid RowDefinitions="Auto, *"
+      Padding="20"
+      RowSpacing="20">
+
+        <VerticalStackLayout Grid.Row="0" Spacing="12">
+
+            <Label Text="Sticky Notes"
+               FontSize="20"
+               FontAttributes="Bold"
+               TextColor="White"
+               HorizontalOptions="Center"/>
+
+            <Border BackgroundColor="#2A2A3E"
+                StrokeShape="RoundRectangle 12"
+                Stroke="#3A3A5E"
+                Padding="4">
+                <Editor x:Name="NoteEditor"
+                    Placeholder="Write a note..."
+                    PlaceholderColor="#7070A0"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    FontSize="15"
+                    HeightRequest="90"
+                    AutoSize="TextChanges"/>
+            </Border>
+
+            <VerticalStackLayout Spacing="6">
+
+                <Label Text="Pick a color"
+                   FontSize="13"
+                   TextColor="#9090B0"/>
+
+                <HorizontalStackLayout x:Name="ColorPickerRow"
+                                   Spacing="10">
+                    </HorizontalStackLayout>
+            </VerticalStackLayout>
+
+            <Button x:Name="AddButton"
+                    Text="+  Add Note"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    BackgroundColor="#6C63FF"
+                    TextColor="White"
+                    CornerRadius="12"
+                    HeightRequest="50"
+                    Clicked="OnAddNoteClicked" />
+            <Label x:Name="EmptyLabel"
+                   Text="No notes yet. Add one above!"
+                   FontSize="14"
+                   TextColor="#6060AB"
+                   HorizontalOptions="Center"
+                   IsVisible="True"/>
+
+        </VerticalStackLayout>
+
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout x:Name="NotesContainer" Spacing="12"/>
+        </ScrollView>
+
+
+    </Grid>
+
+</ContentPage>
