@@ -52,3 +52,63 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+#from gemini
+# ==========================================
+# .NET MAUI / Xamarin / .NET Core .gitignore
+# ==========================================
+
+# --- Target directories (Build outputs) ---
+Bin/
+bin/
+Obj/
+obj/
+
+# --- IDE and Tooling ---
+# Visual Studio
+.vs/
+*.user
+*.userosistmanifest
+*.userprefs
+*.suo
+*.ide/
+*.sln.docstates
+
+# Visual Studio for Mac / Rider / VS Code
+.idea/
+.vscode/
+*.suo
+*.user
+*.userprefs
+*.cscfg
+*.cdxml
+
+# --- OS generated files ---
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Packages & Restore Artifacts ---
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.assets.json
+nupkg/
+
+# --- MAUI / Mobile Specific ---
+# Android
+*.apk
+*.aab
+*.dex
+*.class
+# iOS / MacCatalyst
+*.app
+*.ipa
+*. dSYM/
+
+# --- Secrets & Local Configuration ---
+# Un-comment the next line if you use appsettings.local.json for local secrets
+# appsettings.local.json
